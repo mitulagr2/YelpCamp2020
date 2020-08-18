@@ -19,7 +19,6 @@
     "express-session": "^1.17.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
-    "jsdom": "^16.4.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.23",
     "paper": "^0.12.11",

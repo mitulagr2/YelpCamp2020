@@ -11,14 +11,6 @@ var express         = require("express"),
     User            = require("./models/user"),
     mongoose        = require("mongoose");
 
-var jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const { window } = new JSDOM();
-const { document } = (new JSDOM('')).window;
-global.document = document;
-
-var $ = jQuery = require('jquery')(window);
-
 var commentRoutes = require("./routes/comments"),
     postsRoutes   = require("./routes/posts"),
     indexRoutes   = require("./routes/index");
@@ -35,6 +27,7 @@ mongoose.connect(uri, {
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + '/node_modules/jquery/dist'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(methodOverride("_method"));
 app.use(flash());
