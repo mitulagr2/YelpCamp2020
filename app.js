@@ -11,7 +11,13 @@ var express         = require("express"),
     User            = require("./models/user"),
     mongoose        = require("mongoose");
 
-var $ = require('jquery');
+var jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = (new JSDOM('')).window;
+global.document = document;
+
+var $ = jQuery = require('jquery')(window);
 
 var commentRoutes = require("./routes/comments"),
     postsRoutes   = require("./routes/posts"),
