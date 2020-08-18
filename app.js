@@ -60,6 +60,6 @@ app.use("/posts", postsRoutes);
 app.use("/posts/:id/comments", commentRoutes);
 
 //SERVER STARTUP
-var listener = app.listen("3000", function () {
-  console.log('Server listening on Port ' + listener.address().port);
+app.listen(3000, function(){
+  console.log("Server running on Port 3000.");
 });
