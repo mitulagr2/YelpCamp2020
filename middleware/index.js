@@ -7,7 +7,7 @@ middlewareObj = {
     if(req.isAuthenticated()){
       Post.findById(req.params.id, function(err, foundPost){
         if(err) {
-          req.flash("error", "Error finding campground");
+          req.flash("error", "Error finding post");
 				  res.redirect("back");
           console.log(err);
         } else {
