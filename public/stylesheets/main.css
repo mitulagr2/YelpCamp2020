@@ -17,6 +17,14 @@ textarea, .textInput, .textInput:focus {
   resize: none
 }
 
+h1 {
+  font-size: 4em
+}
+
+.jumbotron {
+  padding: 48px
+}
+
 /* ############################################ */
 
 /* ########### SCROLLBAR SETUP :- ########### */
