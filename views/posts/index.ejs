@@ -2,6 +2,14 @@
 <%- include("../partials/navbar"); %>
 
 <div class="container">
+  
+  <div class="jumbotron">
+    <h1 class="display-4">YelpCamp</h1>
+    <p class="lead">Check these amazing submissions from all over the world!</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Add New Submission</a>
+    </p>
+  </div>
 
 	<div class="row text-center" style="display:flex; flex-wrap: wrap;">
 		<% allPosts.forEach(function(post){ %>
