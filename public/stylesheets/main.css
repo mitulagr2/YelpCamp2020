@@ -1,11 +1,11 @@
 /* ########### site THEME COLORS :- ########### */
 
 body, canvas {
-  background-color: #030303 !important;
+  background-color: #efefef !important;
 }
 
 #nav, #navbrand, .card, .comment {
-  background-color: #1a1a1b !important;
+  background-color: #f8f8f8 !important;
 }
 
 #nav, #navbrand, .card, figcaption, .comment, .alert, .heading, textarea, .textInput, .textInput:focus {
