@@ -1,19 +1,20 @@
 /* ########### site THEME COLORS :- ########### */
 
 body, canvas {
-  background-color: #efefef !important;
+  background-color: #fbfbfb !important;
 }
 
 #nav, #navbrand, .card, .comment {
-  background-color: #f8f8f8 !important;
+  background-color: #efefef !important;
 }
 
 #nav, #navbrand, .card, figcaption, .comment, .alert, .heading, textarea, .textInput, .textInput:focus {
-  color: #d7dadc !important;
+  color: #777 !important;
 }
 
 textarea, .textInput, .textInput:focus {
-  background-color: #272729 !important;
+  background-color: #f6f6f6 !important;
+  resize: none
 }
 
 /* ############################################ */
