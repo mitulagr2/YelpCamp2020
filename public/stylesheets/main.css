@@ -14,15 +14,20 @@ body, canvas {
 
 textarea, .textInput, .textInput:focus {
   background-color: #f6f6f6 !important;
-  resize: none
+  resize: none;
 }
 
 h1 {
-  font-size: 4em
+  font-size: 4em;
 }
 
 .jumbotron {
-  padding: 48px
+  padding: 48px;
+  background-color: #eee;
+}
+
+.btn-primary {
+  background-color: #337ab7;
 }
 
 /* ############################################ */
