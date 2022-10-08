@@ -35,6 +35,10 @@ h2 {
   background-color: #337ab7;
 }
 
+textarea {
+  min-height: 60px;
+}
+
 /* ############################################ */
 
 /* ########### SCROLLBAR SETUP :- ########### */
@@ -44,23 +48,23 @@ h2 {
   height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-color: #312D3C #201C29;
+  scrollbar-color: #fff #efefef;
   scrollbar-width: thin;
-  background: rgba(28, 28, 28, 0.7);
 }
 .scrollbar::-webkit-scrollbar {
   height: 10px;
   width: 10px;
-  background-color: #201C29;
+  background-color: #efefef;
 }
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #312D3C;
+  background: #fff;
+  border-radius: 4px;
 }
 .scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #3F3A4C;
+  background: #f6f6f6;
 }
 .scrollbar::-webkit-scrollbar-track {
-  background-color: #201C29;
+  background-color: #efefef;
 }
 
 /* ########################################## */
