@@ -5,6 +5,14 @@
   </button>
   
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link nav-home d-inline" href="/posts">
+        Home
+        <span class="sr-only">(current)</span>
+      </a>
+    </li>
+    </ul>
     <ul class="navbar-nav ml-auto">
     <% if(!currentUser){ %>
       <li class="nav-item"><a class="nav-link btn" href="/login">
@@ -17,7 +25,7 @@
       </a></li>
     <% } else { %>
       <li><a class="nav-link btn cursordefault">
-        <i class="far fa-user-circle mr-2"></i>Signed In As <%= currentUser.username %>
+        <i class="far fa-user-circle mr-2"></i>Signed in as <%= currentUser.username %>
         <span class="sr-only">(current)</span>
       </a></li>
       <li class="nav-item"><a class="nav-link btn" href="/logout">

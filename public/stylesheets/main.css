@@ -63,6 +63,11 @@ h1 {
 .nav-item {
   margin: 0 0.5em;
 }
+.nav-home {
+  color: #777;
+  position: absolute;
+  bottom: 7px;
+}
 
 .alert-success {
   color: #efefef !important;
