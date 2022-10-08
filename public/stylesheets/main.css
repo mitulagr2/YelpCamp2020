@@ -142,7 +142,7 @@ canvas {
   top: 95%;
   width: 100%;
   text-align: center;
-  color: #d7dadc;
-  opacity: 0.3;
+  color: #222;
+  opacity: 0.8;
 }
 .madeby a { text-decoration: none; }
