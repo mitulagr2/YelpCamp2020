@@ -26,14 +26,14 @@
 </div>
 
 <div class="col-md-6">
-<div class="card card-body bg-dark">
+<div class="card card-body">
     <!-- ################ -->
     <!-- ADD COMMENT FORM -->
     <!-- ################ -->
     <div class="container">
     <form action="/posts/<%= post._id %>/comments" method="POST">
         <div class="form-group">
-            <textarea class="form-control scrollbar-dark"
+            <textarea class="form-control scrollbar"
                         name="comment[text]"
                         cols="55"
                         rows="3"
@@ -71,7 +71,7 @@
     <% } %>
     <form action="/posts/<%= post._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
         <div class="form-group pt-3">
-            <textarea class="form-control comment scrollbar-dark"
+            <textarea class="form-control comment scrollbar"
                         name="comment[text]"
                         cols="55"
                         rows="<%= Math.ceil(comment.text.length / 55) %>"
