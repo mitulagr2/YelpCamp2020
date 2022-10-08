@@ -60,13 +60,15 @@ h1 {
 #nav {
   margin-bottom: 2em;
 }
-.nav-item {
-  margin: 0 0.5em;
+.navbar-brand {
+  margin-left: 1em;
 }
 .nav-home {
   color: #777;
-  position: absolute;
-  bottom: 7px;
+  margin-left: 28px;
+}
+.nav-item {
+  margin: 0 0.5em;
 }
 
 .alert-success {
