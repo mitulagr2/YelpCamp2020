@@ -16,28 +16,14 @@ textarea, .textInput, .textInput:focus {
   background-color: #f6f6f6 !important;
 }
 
+textarea {
+  min-height: 60px;
+}
+
 h1 {
   font-size: 4em;
 }
 
-h2 {
-  text-align: center;
-	line-height: 1.1;
-  margin-top: 2.5em;
-}
-
-.jumbotron {
-  padding: 48px;
-  background-color: #eee;
-}
-
-.btn-primary {
-  background-color: #337ab7;
-}
-
-textarea {
-  min-height: 60px;
-}
 
 /* ############################################ */
 
@@ -79,12 +65,12 @@ textarea {
 }
 
 .alert-success {
-  border: 2px solid rgb(72, 255, 90);
-  background-color: rgba(72, 255, 90, 0.72);
+  border: 2px solid #20933a;
+  background-color: #28a745;
 }
 .alert-danger {
-  border: 2px solid rgb(255, 90, 72);
-  background-color: rgba(255, 90, 72, 0.72);
+  border: 2px solid #c9303e;
+  background-color: #dc3545;
 }
 
 /* ####################################### */
@@ -109,6 +95,17 @@ canvas {
   padding: 1.25rem 0;
 }
 
+.heading2 {
+  text-align: center;
+	line-height: 1.1;
+  margin-top: 2.5em;
+}
+
+.jumbotron {
+  padding: 48px;
+  background-color: #eee;
+}
+
 .postImage {
   opacity: 0.8;
   cursor: pointer;
@@ -116,6 +113,10 @@ canvas {
 
 .comment {
   border: none;
+}
+
+.btn-primary {
+  background-color: #337ab7;
 }
 
 /* ################################# */
