@@ -128,6 +128,10 @@ canvas {
   background-color: #337ab7;
 }
 
+.text-dark {
+  color: #343a40 !important;
+}
+
 /* ################################# */
 
 .cursordefault {
