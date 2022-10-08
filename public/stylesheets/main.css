@@ -14,11 +14,17 @@ body, canvas {
 
 textarea, .textInput, .textInput:focus {
   background-color: #f6f6f6 !important;
-  resize: none;
 }
 
 h1 {
   font-size: 4em;
+}
+
+h2 {
+  text-align: center;
+	line-height: 1.1;
+  margin: 0;
+  padding: 1.25rem 0;
 }
 
 .jumbotron {

@@ -58,6 +58,9 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/posts", postsRoutes);
 app.use("/posts/:id/comments", commentRoutes);
+app.get("/*", function(req, res){
+  res.render("notfound");
+});
 
 //SERVER STARTUP
 app.listen(3000, function(){
