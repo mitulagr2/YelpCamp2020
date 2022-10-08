@@ -3,7 +3,7 @@
 
 <div class="container"><div class="row">
     <div class="col-md-6 mx-auto my-4">
-        <div class="card card-body bg-dark">
+        <div class="card card-body">
             <h2 class="heading">Edit Post</h2>
         <div class="container">
             <form action="/posts/<%= post._id %>?_method=PUT" method="POST">
@@ -21,7 +21,7 @@
                       value="<%= post.image %>"
                       placeholder="Image url">
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-4">
                     <input class="form-control textInput"
                       type="text"
                       name="post[text]"
@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group">
                     <button class="btn btn-outline-primary px-5" type="submit">
-                        <i class="far fa-paper-plane"></i>
+                        <i class="far fa-paper-plane mr-2"></i>
                         Submit!
                     </button>
                 </div>

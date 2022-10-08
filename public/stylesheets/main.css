@@ -65,10 +65,12 @@ h1 {
 }
 
 .alert-success {
+  color: #efefef !important;
   border: 2px solid #20933a;
   background-color: #28a745;
 }
 .alert-danger {
+  color: #efefef !important;
   border: 2px solid #c9303e;
   background-color: #dc3545;
 }
