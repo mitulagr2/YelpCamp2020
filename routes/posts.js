@@ -40,7 +40,7 @@ router.get("/new", middleware.isLoggedIn, function(req, res){
 router.get("/:id", function(req, res){
   Post.findById(req.params.id).populate("comments").exec(function(err, foundPost){
     if(err) {
-      console.log(err);
+      res.redirect("/404");
     } else {
       res.render("posts/show", {post: foundPost});
     }
@@ -51,7 +51,7 @@ router.get("/:id", function(req, res){
 router.get("/:id/edit", middleware.checkPostOwnership, function(req, res){
   Post.findById(req.params.id, function(err, foundPost){
     if(err) {
-      console.log(err);
+      res.redirect("/404");
     } else {
       res.render("posts/edit", {post: foundPost});
     }
@@ -75,7 +75,7 @@ router.delete("/:id", middleware.checkPostOwnership, function(req, res){
   //Delete Post Comments
   Post.findById(req.params.id, function(err, foundPost){
     if(err) {
-      console.log(err);
+      res.redirect("/404");
     } else {
       foundPost.comments.forEach(function(commentID){
         Comment.findByIdAndRemove(commentID, function(err){
