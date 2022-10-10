@@ -5,21 +5,24 @@
 
 <h1 align="center">Welcome to YelpCamp 👋</h1>
 
-This is a hands-on project from the Udemy course - [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/) by Colt Steele.
+> 🏕️ YelpCamp2020 is my first Node.js web app following [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/) by Colt Steele, alongside some tweaks of my own.
 
 ### 🏠 [Click here to see the project in production](https://yelpcamp2020.glitch.me/)
 
+![cover-art](https://user-images.githubusercontent.com/69587385/194880373-32a610bf-b255-4399-9736-5ef276fa1375.png)
+
 ## What I Learnt
--	Introduction to [Express.js](https://expressjs.com/)
--	Introduction to [MongoDB](https://www.mongodb.com/) database design
--	Deploying the app to [Glitch](https://glitch.com/) and Database to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/)
-- Introduction to Model-View-Controller and Monolithic architectures
-- Authentication and authorization using [Passport.js](https://www.passportjs.org/)
-- Directory structure good practices
-- Responsive web design using [Bootstrap](https://getbootstrap.com/)
-- Configuring [Flash messages](https://www.npmjs.com/package/connect-flash) following user interactions
+-	Introduction to [Express.js](https://expressjs.com/).
+-	Introduction to [MongoDB](https://www.mongodb.com/) database design.
+-	Deploying the app to [Glitch](https://glitch.com/) and Database to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/).
+- Introduction to Model-View-Controller and Monolithic architectures.
+- Authentication and authorization using [Passport.js](https://www.passportjs.org/).
+- Directory structure good practices.
+- Responsive web design using [Bootstrap](https://getbootstrap.com/).
+- Configuring [Flash messages](https://www.npmjs.com/package/connect-flash) following user interactions.
+- Experimented with [colorthief](https://lokeshdhakar.com/projects/color-thief/) to apply dominant colour box-shadows in feed images.
 - Experimented with [Paper.js](http://paperjs.org/) to implement a custom 404 page.
-- RESTful routing (all endpoints listed below)
+- RESTful routing (all endpoints listed below).
 
 ```
 -------------------------------------------------------------------------
@@ -57,7 +60,7 @@ DELETE    /posts/:id/comments/:comment_id   Delete a comment
 
 ## Getting Started
 
-Follow the steps below to run this project locally. Remember to create a `.env` file in the root directory.
+Follow the steps below to run this project locally. Remember to create a `.env` file in the root directory and add the key `DB_URL` to it.
 
 1. Clone this repository.
 
@@ -80,9 +83,12 @@ $ yarn install
 
 ```bash
 # Run server
-$ npm start
+$ npm run dev
+
+# Run server
+$ yarn dev
 ```
 
 # Thank you very much!
 
-If you have any suggestions that would make this better, feel free to fork the repo and create a pull request. Much appreciated!
+Open to any suggestions on how to make this better! Feel free to fork the repo - Much appreciated!

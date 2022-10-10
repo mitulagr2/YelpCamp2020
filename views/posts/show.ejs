@@ -4,7 +4,7 @@
 <div class="container"><div class="row">
 <div class="col-md-6">
     <figure class="figure">
-        <img class="figure-img img-fluid rounded" src="<%= post.image %>">
+        <img class="figure-img img-fluid rounded mb-5" src="<%= post.image %>" crossorigin="anonymous">
     <figcaption>
         <h4 class="cursordefault"><%= post.title %></h4>
         <p><%= post.text %></p>
@@ -95,5 +95,36 @@
 </div>
 </div>
 </div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+<script>
+    const colorThief = new ColorThief();
+	const img = document.querySelector('.figure-img');
+
+    function addShadow(img) {
+        var RGB = colorThief.getColor(img);
+        var boxshadow = "";
+        var i = 128;
+
+        while (i > 4)
+            boxshadow += `rgb(${RGB[0]} ${RGB[1]} ${RGB[2]} / 15%) 0px ${i = i/2}px ${i}px 0px,`;
+
+        img.style["boxShadow"] = boxshadow.slice(0, -1);
+    }
+	
+    try {
+        if (img.complete) {
+            addShadow(img)
+        } else {
+            image.addEventListener('load', function() { addShadow(img) });
+        }
+    }
+    catch (error) {
+        var imgObj = new Image();
+        imgObj.classList.add('figure-img', 'img-fluid', 'rounded');
+        imgObj.src = img.src;
+        img.parentNode.replaceChild(imgObj, img);
+    }
+</script>
 
 <%- include("../partials/footer") %>

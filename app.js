@@ -16,8 +16,7 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes   = require("./routes/index");
 
 //MONGO CONNECT
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@prod.tj5jl.gcp.mongodb.net/prod?retryWrites=true&w=majority`;
-mongoose.connect(uri, {
+mongoose.connect(process.env.DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false

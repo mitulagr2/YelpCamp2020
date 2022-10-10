@@ -17,7 +17,7 @@
 		<% allPosts.forEach(function(post){ %>
 			<div class="col col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
 				<figure class="figure">
-					<img class="figure-img img-fluid rounded postImage"
+					<img class="figure-img img-fluid rounded postImage" crossorigin="anonymous"
 					src="<%= post.image %>"
 					onclick="handlePostClick('/posts/<%= post._id %>')"
 					>
@@ -33,5 +33,39 @@
 	</div>
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+<script>
+    const colorThief = new ColorThief();
+	const allImgs = document.querySelectorAll('.figure-img');
+
+	function addShadow(img) {
+		var RGB = colorThief.getColor(img);
+		var boxshadow = "";
+		var i = 64;
+
+		while (i > 4)
+			boxshadow += `rgb(${RGB[0]} ${RGB[1]} ${RGB[2]} / 15%) 0px ${i = i/2}px ${i}px 0px,`;
+		
+		img.style["boxShadow"] = boxshadow.slice(0, -1);
+	}
+	
+	allImgs.forEach(function(img){ 
+		try {
+			if (img.complete) {
+				addShadow(img);
+			} else {
+				image.addEventListener('load', function() {	addShadow(img);	});
+			}
+		}
+		catch (error) {
+			var imgObj = new Image();
+			imgObj.classList.add('figure-img', 'img-fluid', 'rounded', 'postImage');
+			imgObj.src = img.src;
+			imgObj.onclick = img.onclick;
+			img.parentNode.replaceChild(imgObj, img);
+		}
+	});
+</script>
 
 <%- include("../partials/footer"); %>

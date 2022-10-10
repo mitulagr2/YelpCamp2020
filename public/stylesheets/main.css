@@ -1,4 +1,17 @@
-/* ########### site THEME COLORS :- ########### */
+html {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* ########### site THEME :- ########### */
 
 body, canvas {
   background-color: #fbfbfb !important;
@@ -12,18 +25,160 @@ body, canvas {
   color: #777 !important;
 }
 
+.content {
+  color: #fbfbfb;
+}
+
 textarea, .textInput, .textInput:focus {
   background-color: #f6f6f6 !important;
 }
 
+.heading-main {
+  color: #fbfbfb !important;
+  text-shadow: 0 1px 0 #ccc,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15) !important;
+}
+.madeby a {
+  color: #fbfbfb !important;
+  text-decoration: underline;
+}
+
+.navbar {
+  font-family: 'Pacifico', cursive;
+}
+body {
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+h1, h2 {
+  letter-spacing: 6px;
+  word-spacing: 12px;
+}
+
+/* ########### NAVBAR :- ########### */
+
+.navbar {
+  z-index: 1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navbar-brand {
+  margin-left: 1em;
+}
+.nav-home {
+  margin-left: 28px;
+}
+.nav-item {
+  margin: 0 0.5em;
+}
+
+.alert {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.alert-success {
+  color: #efefef !important;
+  border: 2px solid #20933a;
+  background-color: #28a745;
+}
+.alert-danger {
+  color: #efefef !important;
+  border: 2px solid #c9303e;
+  background-color: #dc3545;
+}
+
+/* ########### OTHERS :- ########### */
+
+canvas {
+	width: 100%;
+	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+	z-index: -1;
+}
+
+.cover {
+  flex-grow: 1;
+  position: relative;
+  background-image: url("../assets/cover-art.png");
+  background-size: cover;
+  filter: blur(8px);
+  z-index: -1;
+  margin-top: -2em;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  float: left;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+.bold {
+  height: 100%;
+  padding-top: 16em;
+}
+.bold * {
+  font-weight: bold !important;
+  text-shadow: 1px 1px 2px #777, 0 0 1em #777, 0 0 0.2em #777;
+}
+
+.heading {
+  text-align: center;
+	line-height: 1.1;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 1.25rem 0;
+}
+.heading2 {
+  text-align: center;
+	line-height: 1.1;
+  margin-top: 2.5em;
+}
+.h1-large {
+  font-size: 4em;
+}
+
+.jumbotron {
+  padding: 48px;
+  background-color: #eee;
+}
+.postImage {
+  cursor: pointer;
+}
 textarea {
   min-height: 60px;
 }
+.comment {
+  border: none;
+}
+.btn-primary {
+  background-color: #337ab7;
+}
 
 
-/* ############################################ */
-
-/* ########### SCROLLBAR SETUP :- ########### */
+/* ########### SCROLLBAR :- ########### */
 
 .scrollbar {
   background: #efefef;
@@ -49,89 +204,6 @@ textarea {
   background-color: #efefef;
 }
 
-/* ########################################## */
-
-/* ########### NAVBAR SETUP :- ########### */
-
-#nav {
-  margin-bottom: 2em;
-}
-.navbar-brand {
-  margin-left: 1em;
-}
-.nav-home {
-  color: #777;
-  margin-left: 28px;
-}
-.nav-item {
-  margin: 0 0.5em;
-}
-
-.alert-success {
-  color: #efefef !important;
-  border: 2px solid #20933a;
-  background-color: #28a745;
-}
-.alert-danger {
-  color: #efefef !important;
-  border: 2px solid #c9303e;
-  background-color: #dc3545;
-}
-
-/* ####################################### */
-
-/* ########### OTHERS :- ########### */
-
-canvas {
-	width: 100%;
-	height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-	z-index: -1;
-}
-
-.heading {
-  text-align: center;
-	line-height: 1.1;
-  font-weight: normal;
-  margin: 0;
-  text-transform: uppercase;
-  padding: 1.25rem 0;
-}
-
-.heading2 {
-  text-align: center;
-	line-height: 1.1;
-  margin-top: 2.5em;
-}
-
-.h1-large {
-  font-size: 4em;
-}
-
-.jumbotron {
-  padding: 48px;
-  background-color: #eee;
-}
-
-.postImage {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.comment {
-  border: none;
-}
-
-.btn-primary {
-  background-color: #337ab7;
-}
-
-.text-dark {
-  color: #343a40 !important;
-}
-
 /* ################################# */
 
 .cursordefault {
@@ -143,10 +215,8 @@ canvas {
 
 .madeby {
   position: absolute;
-  top: 95%;
+  bottom: 4%;
   width: 100%;
   text-align: center;
-  color: #222;
-  opacity: 0.8;
+  opacity: 0.6;
 }
-.madeby a { text-decoration: none; }

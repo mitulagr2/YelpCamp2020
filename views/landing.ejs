@@ -1,17 +1,28 @@
 <%- include("./partials/header"); %>
 <%- include("./partials/navbar"); %>
 
-<div class="mb-5"></div>
-<h1 class="text-dark heading">Welcome to YelpCamp!</h1>
-<h5 class="text-center">
-  A place to post and review campgrounds except no one here posts and reviews campgrounds
-</h5>
-<p class="heading h5">
-  <a href="/posts">Get Started</a>
-</p>
+<div class="cover"></div>
 
-<p class="madeby">Made by
-  <a href="https://mitulagrofficial.netlify.app" target="_blank">mitulagrofficial</a>
-</p>
+<div class="bold content">
+  <div class="mb-5"></div>
+  <h1 class="heading-main heading mb-4">Welcome to YelpCamp!</h1>
+  <h5 class="text-center mb-5">
+    A place to post and review campgrounds except no one here posts or reviews campgrounds
+  </h5>
+  <p class="heading h5">
+    <a class="btn btn-outline-success px-5 py-2" href="/posts" role="button">
+      <i class="far fa-sun mr-2"></i>
+      Get Started
+    </a>
+  </p>
+
+  <p class="madeby">
+    Made by
+    <a href="https://mitulagrofficial.netlify.app" target="_blank">mitulagrofficial</a>
+    -
+    Cover art by
+    <a href="https://dribbble.com/kuvaldin" target="_blank">Kuvaldin</a>!
+  </p>
+</div>
 
 <%- include("./partials/footer"); %>
