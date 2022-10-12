@@ -1,8 +1,3 @@
-<div align="right">
-  <img src="https://img.shields.io/badge/Completion-100%25-blue.svg" />
-  <a href="#" alt="License"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
-</div>
-
 <h1 align="center">Welcome to YelpCamp 👋</h1>
 
 > 🏕️ YelpCamp2020 is my first Node.js web app following [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/) by Colt Steele, alongside some tweaks of my own.
