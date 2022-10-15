@@ -13,7 +13,6 @@
 - Introduction to Model-View-Controller and Monolithic architectures.
 - Authentication and authorization using [Passport.js](https://www.passportjs.org/).
 - Directory structure good practices.
-- Responsive web design using [Bootstrap](https://getbootstrap.com/).
 - Configuring [Flash messages](https://www.npmjs.com/package/connect-flash) following user interactions.
 - Experimented with [colorthief](https://lokeshdhakar.com/projects/color-thief/) to apply dominant colour box-shadows in feed images.
 - Experimented with [Paper.js](http://paperjs.org/) to implement a custom 404 page.
