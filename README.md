@@ -2,7 +2,7 @@
 
 > 🏕️ YelpCamp2020 is my first Node.js web app following [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/) by Colt Steele, alongside some tweaks of my own.
 
-### 🏠 [Click here to see the project in production](https://yelpcamp2020.glitch.me/)
+## 🏠 [Click here to see the project in production](https://yelpcamp2020.glitch.me/)
 
 ![cover-art](https://user-images.githubusercontent.com/69587385/194880373-32a610bf-b255-4399-9736-5ef276fa1375.png)
 
