@@ -165,13 +165,6 @@ canvas {
   background-color: #eee;
 }
 .figure-img {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 64px 64px 0px,
-              rgba(0, 0, 0, 0.15) 0px 32px 32px 0px,
-              rgba(0, 0, 0, 0.15) 0px 16px 16px 0px,
-              rgba(0, 0, 0, 0.15) 0px 8px 8px 0px,
-              rgba(0, 0, 0, 0.15) 0px 4px 4px 0px;
-}
-.col .figure-img {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 32px 32px 0px,
               rgba(0, 0, 0, 0.15) 0px 16px 16px 0px,
               rgba(0, 0, 0, 0.15) 0px 8px 8px 0px,
