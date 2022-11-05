@@ -136,11 +136,14 @@ canvas {
 
 .bold {
   height: 100%;
-  padding-top: 16em;
+  padding-top: 24vh;
 }
 .bold * {
   font-weight: bold !important;
   text-shadow: 1px 1px 2px #777, 0 0 1em #777, 0 0 0.2em #777;
+}
+.bold a, .bold a * {
+  text-shadow: none;
 }
 
 .heading {
