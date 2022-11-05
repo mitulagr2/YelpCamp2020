@@ -60,7 +60,7 @@ Follow the steps below to run this project locally. Remember to create a `.env` 
 
 ```bash
 # Clone repository
-$ git clone https://github.com/mitulagrofficial/YelpCamp2020.git && cd YelpCamp2020
+$ git clone https://github.com/mitulagr2/YelpCamp2020.git && cd YelpCamp2020
 ```
 
 2. Install dependencies via NPM or Yarn

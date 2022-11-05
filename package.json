@@ -8,7 +8,7 @@
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "mitulagrofficial",
+  "author": "mitulagr2",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
